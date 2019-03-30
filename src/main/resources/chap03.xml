@@ -7,18 +7,15 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="greeter" class="com.kjh.jdbc.spring.Greeter" />
+	<bean id="memberDao" class="org.kjh.book.chap03.MemberDao" />
 
-	<bean id="memberDao" class="org.kjh.book.example.MemberDao" />
+	
 
-	<bean id="articleService"
-		class="org.kjh.book.example.ArticleService">
-		<property name="memberDao" ref="memberDao" />
+	<!-- dependency injection by setter -->
+	
+	<bean id="memberRegisterService"
+		class="org.kjh.book.chap03.MemberRegisterService">
+		<property name="memberDao" ref="memberDao"/>
 	</bean>
-
-	<bean id="memberService"
-		class="org.kjh.book.example.MemberService">
-		<property name="memberDao" ref="memberDao" />
-	</bean>
-
+	
 </beans>

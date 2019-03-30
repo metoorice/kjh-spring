@@ -1,11 +1,12 @@
 package com.kjh.jdbc.spring;
 
 public class Greeter {
+	
 	public Greeter() {
-		System.out.println("Greeter instance created.");
+		System.out.println("Greeter instance created!");
 	}
 	
 	public String greet() {
-		return "Hello, World!";
+		return "Hello, Spring!";
 	}
 }
