@@ -5,4 +5,9 @@ build
 gradle
 gradlew*
 settings.gradle
+<<<<<<< HEAD
 src/main/resource/db.properties
+=======
+
+
+>>>>>>> cfba76a84841e4858fcb4cefffd6baebf7871887
